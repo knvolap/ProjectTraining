@@ -1,0 +1,16 @@
+C:\Users\tvlap\source\repos\ProgrammingCsharp\ProgrammingCsharp\bin\Debug\net5.0\ProgrammingCsharp.exe
+C:\Users\tvlap\source\repos\ProgrammingCsharp\ProgrammingCsharp\bin\Debug\net5.0\ProgrammingCsharp.deps.json
+C:\Users\tvlap\source\repos\ProgrammingCsharp\ProgrammingCsharp\bin\Debug\net5.0\ProgrammingCsharp.runtimeconfig.json
+C:\Users\tvlap\source\repos\ProgrammingCsharp\ProgrammingCsharp\bin\Debug\net5.0\ProgrammingCsharp.runtimeconfig.dev.json
+C:\Users\tvlap\source\repos\ProgrammingCsharp\ProgrammingCsharp\bin\Debug\net5.0\ProgrammingCsharp.dll
+C:\Users\tvlap\source\repos\ProgrammingCsharp\ProgrammingCsharp\bin\Debug\net5.0\ProgrammingCsharp.pdb
+C:\Users\tvlap\source\repos\ProgrammingCsharp\ProgrammingCsharp\obj\Debug\net5.0\ProgrammingCsharp.csproj.AssemblyReference.cache
+C:\Users\tvlap\source\repos\ProgrammingCsharp\ProgrammingCsharp\obj\Debug\net5.0\ProgrammingCsharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tvlap\source\repos\ProgrammingCsharp\ProgrammingCsharp\obj\Debug\net5.0\ProgrammingCsharp.AssemblyInfoInputs.cache
+C:\Users\tvlap\source\repos\ProgrammingCsharp\ProgrammingCsharp\obj\Debug\net5.0\ProgrammingCsharp.AssemblyInfo.cs
+C:\Users\tvlap\source\repos\ProgrammingCsharp\ProgrammingCsharp\obj\Debug\net5.0\ProgrammingCsharp.csproj.CoreCompileInputs.cache
+C:\Users\tvlap\source\repos\ProgrammingCsharp\ProgrammingCsharp\obj\Debug\net5.0\ProgrammingCsharp.dll
+C:\Users\tvlap\source\repos\ProgrammingCsharp\ProgrammingCsharp\obj\Debug\net5.0\refint\ProgrammingCsharp.dll
+C:\Users\tvlap\source\repos\ProgrammingCsharp\ProgrammingCsharp\obj\Debug\net5.0\ProgrammingCsharp.pdb
+C:\Users\tvlap\source\repos\ProgrammingCsharp\ProgrammingCsharp\obj\Debug\net5.0\ProgrammingCsharp.genruntimeconfig.cache
+C:\Users\tvlap\source\repos\ProgrammingCsharp\ProgrammingCsharp\obj\Debug\net5.0\ref\ProgrammingCsharp.dll

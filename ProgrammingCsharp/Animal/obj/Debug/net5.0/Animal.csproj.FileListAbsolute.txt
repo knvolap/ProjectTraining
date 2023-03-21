@@ -1,0 +1,16 @@
+C:\Users\tvlap\source\repos\ProgrammingCsharp\Animal\bin\Debug\net5.0\Animal.exe
+C:\Users\tvlap\source\repos\ProgrammingCsharp\Animal\bin\Debug\net5.0\Animal.deps.json
+C:\Users\tvlap\source\repos\ProgrammingCsharp\Animal\bin\Debug\net5.0\Animal.runtimeconfig.json
+C:\Users\tvlap\source\repos\ProgrammingCsharp\Animal\bin\Debug\net5.0\Animal.runtimeconfig.dev.json
+C:\Users\tvlap\source\repos\ProgrammingCsharp\Animal\bin\Debug\net5.0\Animal.dll
+C:\Users\tvlap\source\repos\ProgrammingCsharp\Animal\bin\Debug\net5.0\Animal.pdb
+C:\Users\tvlap\source\repos\ProgrammingCsharp\Animal\obj\Debug\net5.0\Animal.csproj.AssemblyReference.cache
+C:\Users\tvlap\source\repos\ProgrammingCsharp\Animal\obj\Debug\net5.0\Animal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tvlap\source\repos\ProgrammingCsharp\Animal\obj\Debug\net5.0\Animal.AssemblyInfoInputs.cache
+C:\Users\tvlap\source\repos\ProgrammingCsharp\Animal\obj\Debug\net5.0\Animal.AssemblyInfo.cs
+C:\Users\tvlap\source\repos\ProgrammingCsharp\Animal\obj\Debug\net5.0\Animal.csproj.CoreCompileInputs.cache
+C:\Users\tvlap\source\repos\ProgrammingCsharp\Animal\obj\Debug\net5.0\Animal.dll
+C:\Users\tvlap\source\repos\ProgrammingCsharp\Animal\obj\Debug\net5.0\refint\Animal.dll
+C:\Users\tvlap\source\repos\ProgrammingCsharp\Animal\obj\Debug\net5.0\Animal.pdb
+C:\Users\tvlap\source\repos\ProgrammingCsharp\Animal\obj\Debug\net5.0\Animal.genruntimeconfig.cache
+C:\Users\tvlap\source\repos\ProgrammingCsharp\Animal\obj\Debug\net5.0\ref\Animal.dll

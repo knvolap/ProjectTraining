@@ -1,0 +1,16 @@
+C:\Users\tvlap\source\repos\ProgrammingCsharp\SchoolManagement\bin\Debug\net5.0\SchoolManagement.exe
+C:\Users\tvlap\source\repos\ProgrammingCsharp\SchoolManagement\bin\Debug\net5.0\SchoolManagement.deps.json
+C:\Users\tvlap\source\repos\ProgrammingCsharp\SchoolManagement\bin\Debug\net5.0\SchoolManagement.runtimeconfig.json
+C:\Users\tvlap\source\repos\ProgrammingCsharp\SchoolManagement\bin\Debug\net5.0\SchoolManagement.runtimeconfig.dev.json
+C:\Users\tvlap\source\repos\ProgrammingCsharp\SchoolManagement\bin\Debug\net5.0\SchoolManagement.dll
+C:\Users\tvlap\source\repos\ProgrammingCsharp\SchoolManagement\bin\Debug\net5.0\SchoolManagement.pdb
+C:\Users\tvlap\source\repos\ProgrammingCsharp\SchoolManagement\obj\Debug\net5.0\SchoolManagement.csproj.AssemblyReference.cache
+C:\Users\tvlap\source\repos\ProgrammingCsharp\SchoolManagement\obj\Debug\net5.0\SchoolManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tvlap\source\repos\ProgrammingCsharp\SchoolManagement\obj\Debug\net5.0\SchoolManagement.AssemblyInfoInputs.cache
+C:\Users\tvlap\source\repos\ProgrammingCsharp\SchoolManagement\obj\Debug\net5.0\SchoolManagement.AssemblyInfo.cs
+C:\Users\tvlap\source\repos\ProgrammingCsharp\SchoolManagement\obj\Debug\net5.0\SchoolManagement.csproj.CoreCompileInputs.cache
+C:\Users\tvlap\source\repos\ProgrammingCsharp\SchoolManagement\obj\Debug\net5.0\SchoolManagement.dll
+C:\Users\tvlap\source\repos\ProgrammingCsharp\SchoolManagement\obj\Debug\net5.0\refint\SchoolManagement.dll
+C:\Users\tvlap\source\repos\ProgrammingCsharp\SchoolManagement\obj\Debug\net5.0\SchoolManagement.pdb
+C:\Users\tvlap\source\repos\ProgrammingCsharp\SchoolManagement\obj\Debug\net5.0\SchoolManagement.genruntimeconfig.cache
+C:\Users\tvlap\source\repos\ProgrammingCsharp\SchoolManagement\obj\Debug\net5.0\ref\SchoolManagement.dll
