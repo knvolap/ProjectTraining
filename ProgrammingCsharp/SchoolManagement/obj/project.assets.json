@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tvlap\\source\\repos\\ProgrammingCsharp\\SchoolManagement\\SchoolManagement.csproj",
+      "projectUniqueName": "C:\\Users\\tvlap\\source\\repos\\ProjectTraining\\ProgrammingCsharp\\SchoolManagement\\SchoolManagement.csproj",
       "projectName": "SchoolManagement",
-      "projectPath": "C:\\Users\\tvlap\\source\\repos\\ProgrammingCsharp\\SchoolManagement\\SchoolManagement.csproj",
+      "projectPath": "C:\\Users\\tvlap\\source\\repos\\ProjectTraining\\ProgrammingCsharp\\SchoolManagement\\SchoolManagement.csproj",
       "packagesPath": "C:\\Users\\tvlap\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tvlap\\source\\repos\\ProgrammingCsharp\\SchoolManagement\\obj\\",
+      "outputPath": "C:\\Users\\tvlap\\source\\repos\\ProjectTraining\\ProgrammingCsharp\\SchoolManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tvlap\\AppData\\Roaming\\NuGet\\NuGet.Config",

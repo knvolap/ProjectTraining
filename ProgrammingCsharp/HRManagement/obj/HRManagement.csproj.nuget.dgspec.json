@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tvlap\\source\\repos\\ProgrammingCsharp\\HRManagement\\HRManagement.csproj": {}
+    "C:\\Users\\tvlap\\source\\repos\\ProjectTraining\\ProgrammingCsharp\\HRManagement\\HRManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tvlap\\source\\repos\\ProgrammingCsharp\\HRManagement\\HRManagement.csproj": {
+    "C:\\Users\\tvlap\\source\\repos\\ProjectTraining\\ProgrammingCsharp\\HRManagement\\HRManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tvlap\\source\\repos\\ProgrammingCsharp\\HRManagement\\HRManagement.csproj",
+        "projectUniqueName": "C:\\Users\\tvlap\\source\\repos\\ProjectTraining\\ProgrammingCsharp\\HRManagement\\HRManagement.csproj",
         "projectName": "HRManagement",
-        "projectPath": "C:\\Users\\tvlap\\source\\repos\\ProgrammingCsharp\\HRManagement\\HRManagement.csproj",
+        "projectPath": "C:\\Users\\tvlap\\source\\repos\\ProjectTraining\\ProgrammingCsharp\\HRManagement\\HRManagement.csproj",
         "packagesPath": "C:\\Users\\tvlap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tvlap\\source\\repos\\ProgrammingCsharp\\HRManagement\\obj\\",
+        "outputPath": "C:\\Users\\tvlap\\source\\repos\\ProjectTraining\\ProgrammingCsharp\\HRManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tvlap\\AppData\\Roaming\\NuGet\\NuGet.Config",

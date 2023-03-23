@@ -9,3 +9,14 @@ C:\Users\tvlap\source\repos\TMAPaint\TMAPaint\obj\Debug\TMAPaint.csproj.Generate
 C:\Users\tvlap\source\repos\TMAPaint\TMAPaint\obj\Debug\TMAPaint.csproj.CoreCompileInputs.cache
 C:\Users\tvlap\source\repos\TMAPaint\TMAPaint\obj\Debug\TMAPaint.exe
 C:\Users\tvlap\source\repos\TMAPaint\TMAPaint\obj\Debug\TMAPaint.pdb
+C:\Users\tvlap\source\repos\ProjectTraining\TMAPaint\TMAPaint\bin\Debug\TMAPaint.exe.config
+C:\Users\tvlap\source\repos\ProjectTraining\TMAPaint\TMAPaint\bin\Debug\TMAPaint.exe
+C:\Users\tvlap\source\repos\ProjectTraining\TMAPaint\TMAPaint\bin\Debug\TMAPaint.pdb
+C:\Users\tvlap\source\repos\ProjectTraining\TMAPaint\TMAPaint\obj\Debug\TMAPaint.csproj.AssemblyReference.cache
+C:\Users\tvlap\source\repos\ProjectTraining\TMAPaint\TMAPaint\obj\Debug\TMAPaint.csproj.SuggestedBindingRedirects.cache
+C:\Users\tvlap\source\repos\ProjectTraining\TMAPaint\TMAPaint\obj\Debug\TMAPaint.Form1.resources
+C:\Users\tvlap\source\repos\ProjectTraining\TMAPaint\TMAPaint\obj\Debug\TMAPaint.Properties.Resources.resources
+C:\Users\tvlap\source\repos\ProjectTraining\TMAPaint\TMAPaint\obj\Debug\TMAPaint.csproj.GenerateResource.cache
+C:\Users\tvlap\source\repos\ProjectTraining\TMAPaint\TMAPaint\obj\Debug\TMAPaint.csproj.CoreCompileInputs.cache
+C:\Users\tvlap\source\repos\ProjectTraining\TMAPaint\TMAPaint\obj\Debug\TMAPaint.exe
+C:\Users\tvlap\source\repos\ProjectTraining\TMAPaint\TMAPaint\obj\Debug\TMAPaint.pdb

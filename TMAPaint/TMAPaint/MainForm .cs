@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace TMAPaint
@@ -17,11 +18,15 @@ namespace TMAPaint
         {
             ApplyTheme();
         }
+
         bool isCheckBox;
         int x, y, width, height;
         int selectedRow;
-        Stack<DataRow> undoStack = new Stack<DataRow>();
-        Stack<DataRow> redoStack = new Stack<DataRow>();
+            
+        int RecordIndex = 0;
+        bool UndoRedo = false;
+        Stack<DataTable> dtStack = new Stack<DataTable>();
+
         // Apply the selected theme
         private void ApplyTheme()
         {
@@ -92,12 +97,18 @@ namespace TMAPaint
                 return;
             
            dataGridView.Rows.Add(textBox1.Text, textBox3.Text, textBox2.Text, textBox4.Text);
+                   
+           dtStack.Push(GetDataTableFromDGV(dataGridView));
+           UpdateBtnStatus();
         }
 
         private void Remove(object sender, EventArgs e)
         {
             selectedRow = dataGridView.CurrentCell.RowIndex;
             dataGridView.Rows.RemoveAt(selectedRow);
+           
+            dtStack.Push(GetDataTableFromDGV(dataGridView));
+            UpdateBtnStatus();
         }
 
         private void textBox_x(object sender, EventArgs e)
@@ -119,37 +130,102 @@ namespace TMAPaint
         {
             height = Convert.ToInt32(this.textBox4.Text);
         }
-             
+
+        private void UpdateBtnStatus()
+        {
+            if (RecordIndex == this.dtStack.Count - 1)
+                this.btnUndo.Enabled = false;
+            else
+                this.btnUndo.Enabled = true;
+
+            if (RecordIndex == 0)
+                this.btnRedo.Enabled = false;
+            else
+                this.btnRedo.Enabled = true;
+        }
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            UpdateBtnStatus();
+
             selectedRow = e.RowIndex;
             var row  = dataGridView.Rows[selectedRow];
             textBox1.Text = row.Cells[0].Value.ToString();
             textBox2.Text = row.Cells[2].Value.ToString();
             textBox3.Text = row.Cells[1].Value.ToString();
-            textBox4.Text = row.Cells[3].Value.ToString();     
+            textBox4.Text = row.Cells[3].Value.ToString();
+
+            if (UndoRedo)
+                return;
+
+            DataGridView dgv = (DataGridView)sender;
+            int r = e.RowIndex;
+            int c = e.ColumnIndex;
+            if (dgv.Rows[r].Cells[c].Value != null)
+            {
+                string dgvResult = dgv.Rows[r].Cells[c].Value.ToString();
+                string dtResult = dtStack.ElementAt(RecordIndex).Rows[r][c].ToString();
+                if (dgvResult != dtResult)
+                {
+                    while (RecordIndex > 0)
+                    {
+                        dtStack.Pop();
+                        RecordIndex--;
+                    }
+
+                    dtStack.Push(GetDataTableFromDGV(dataGridView));
+                }
+            }
+            UpdateBtnStatus();
         }
-      
-        public void datatablaToDataGrid(DataGridView dgv, DataTable datatable) 
+        
+        public void datatablaToDataGrid(DataGridView dgv, DataTable datatable)
         {
             for (int i = 0; i < datatable.Rows.Count; i++)
             {
                 for (int j = 0; j < datatable.Columns.Count; j++)
-
                 {
                     dgv.Rows[i].Cells[j].Value = datatable.Rows[i][j].ToString();
                 }
             }
         }
 
+        public DataTable GetDataTableFromDGV(DataGridView dgv)
+        {
+            var dt = new DataTable();
+
+            foreach (DataGridViewColumn column in dgv.Columns)
+            {
+                dt.Columns.Add(column.Name);
+            }
+
+            object[] cellValues = new object[dgv.Columns.Count];
+
+            foreach (DataGridViewRow row in dgv.Rows)
+            {
+                for (int i = 0; i < row.Cells.Count; i++)
+                {
+                    cellValues[i] = row.Cells[i].Value;
+                }
+                dt.Rows.Add(cellValues);
+            }
+            return dt;
+        }
+
         private void Undo(object sender, EventArgs e)
         {
-          
+            UndoRedo = true;
+            datatablaToDataGrid(dataGridView, dtStack.ToList()[++RecordIndex]);
+            UpdateBtnStatus();
+            UndoRedo = false;
         }
 
         private void Redo(object sender, EventArgs e)
         {
-
+            UndoRedo = true;
+            datatablaToDataGrid(dataGridView, dtStack.ToList()[--RecordIndex]);
+            UpdateBtnStatus();
+            UndoRedo = false;
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
@@ -164,9 +240,33 @@ namespace TMAPaint
             printDocument1.Print();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void ValidationKeyPress(object sender, KeyPressEventArgs e)
         {
+            char ch = e.KeyChar;
+            if(!char.IsDigit(ch) && ch != 8 && ch != 46 && ch != '.')
+            {
+                e.Handled = true;
+            }    
+        }
 
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidationKeyPress(sender, e);
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidationKeyPress(sender, e);
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidationKeyPress(sender, e);
+        }
+
+        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidationKeyPress(sender, e);
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tvlap\\source\\repos\\ProgrammingCsharp\\ProgrammingCsharp\\DefiningClasses.csproj": {}
+    "C:\\Users\\tvlap\\source\\repos\\ProjectTraining\\ProgrammingCsharp\\ProgrammingCsharp\\DefiningClasses.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tvlap\\source\\repos\\ProgrammingCsharp\\ProgrammingCsharp\\DefiningClasses.csproj": {
+    "C:\\Users\\tvlap\\source\\repos\\ProjectTraining\\ProgrammingCsharp\\ProgrammingCsharp\\DefiningClasses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tvlap\\source\\repos\\ProgrammingCsharp\\ProgrammingCsharp\\DefiningClasses.csproj",
+        "projectUniqueName": "C:\\Users\\tvlap\\source\\repos\\ProjectTraining\\ProgrammingCsharp\\ProgrammingCsharp\\DefiningClasses.csproj",
         "projectName": "DefiningClasses",
-        "projectPath": "C:\\Users\\tvlap\\source\\repos\\ProgrammingCsharp\\ProgrammingCsharp\\DefiningClasses.csproj",
+        "projectPath": "C:\\Users\\tvlap\\source\\repos\\ProjectTraining\\ProgrammingCsharp\\ProgrammingCsharp\\DefiningClasses.csproj",
         "packagesPath": "C:\\Users\\tvlap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tvlap\\source\\repos\\ProgrammingCsharp\\ProgrammingCsharp\\obj\\",
+        "outputPath": "C:\\Users\\tvlap\\source\\repos\\ProjectTraining\\ProgrammingCsharp\\ProgrammingCsharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tvlap\\AppData\\Roaming\\NuGet\\NuGet.Config",

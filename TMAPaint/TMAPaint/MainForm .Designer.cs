@@ -31,10 +31,11 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.panel = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnRemove = new System.Windows.Forms.Button();
+            this.btnUndo = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -50,9 +51,8 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnRedo = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -84,16 +84,23 @@
             this.dToolStripMenuItem1.Text = "3D";
             this.dToolStripMenuItem1.Click += new System.EventHandler(this.ToolStripMenuItemThree);
             // 
-            // button1
+            // printToolStripMenuItem
             // 
-            this.button1.Location = new System.Drawing.Point(12, 45);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(5);
-            this.button1.Size = new System.Drawing.Size(88, 41);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Add);
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.printToolStripMenuItem.Text = "Print";
+            this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(12, 45);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Padding = new System.Windows.Forms.Padding(5);
+            this.btnAdd.Size = new System.Drawing.Size(88, 41);
+            this.btnAdd.TabIndex = 1;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.Add);
             // 
             // panel
             // 
@@ -105,27 +112,27 @@
             this.panel.TabIndex = 3;
             this.panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button2
+            // btnRemove
             // 
-            this.button2.Location = new System.Drawing.Point(12, 83);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(5);
-            this.button2.Size = new System.Drawing.Size(88, 36);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Remove";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Remove);
+            this.btnRemove.Location = new System.Drawing.Point(12, 83);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Padding = new System.Windows.Forms.Padding(5);
+            this.btnRemove.Size = new System.Drawing.Size(88, 36);
+            this.btnRemove.TabIndex = 5;
+            this.btnRemove.Text = "Remove";
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.Remove);
             // 
-            // button3
+            // btnUndo
             // 
-            this.button3.Location = new System.Drawing.Point(12, 117);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(5);
-            this.button3.Size = new System.Drawing.Size(88, 37);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Undo";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Undo);
+            this.btnUndo.Location = new System.Drawing.Point(12, 117);
+            this.btnUndo.Name = "btnUndo";
+            this.btnUndo.Padding = new System.Windows.Forms.Padding(5);
+            this.btnUndo.Size = new System.Drawing.Size(88, 37);
+            this.btnUndo.TabIndex = 7;
+            this.btnUndo.Text = "Undo";
+            this.btnUndo.UseVisualStyleBackColor = true;
+            this.btnUndo.Click += new System.EventHandler(this.Undo);
             // 
             // label1
             // 
@@ -184,6 +191,7 @@
             this.textBox4.Size = new System.Drawing.Size(122, 20);
             this.textBox4.TabIndex = 16;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox_height);
+            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
             // 
             // textBox3
             // 
@@ -192,6 +200,7 @@
             this.textBox3.Size = new System.Drawing.Size(79, 20);
             this.textBox3.TabIndex = 15;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox_y);
+            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // textBox2
             // 
@@ -200,6 +209,7 @@
             this.textBox2.Size = new System.Drawing.Size(122, 20);
             this.textBox2.TabIndex = 14;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox_width);
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // textBox1
             // 
@@ -208,6 +218,7 @@
             this.textBox1.Size = new System.Drawing.Size(79, 20);
             this.textBox1.TabIndex = 13;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox_x);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label3
             // 
@@ -263,27 +274,20 @@
             this.Column4.HeaderText = "Height";
             this.Column4.Name = "Column4";
             // 
-            // printToolStripMenuItem
-            // 
-            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.printToolStripMenuItem.Text = "Print";
-            this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
-            // 
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
-            // button4
+            // btnRedo
             // 
-            this.button4.Location = new System.Drawing.Point(12, 151);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(5);
-            this.button4.Size = new System.Drawing.Size(88, 40);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Redo";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Redo);
+            this.btnRedo.Location = new System.Drawing.Point(12, 151);
+            this.btnRedo.Name = "btnRedo";
+            this.btnRedo.Padding = new System.Windows.Forms.Padding(5);
+            this.btnRedo.Size = new System.Drawing.Size(88, 40);
+            this.btnRedo.TabIndex = 6;
+            this.btnRedo.Text = "Redo";
+            this.btnRedo.UseVisualStyleBackColor = true;
+            this.btnRedo.Click += new System.EventHandler(this.Redo);
             // 
             // Form1
             // 
@@ -292,11 +296,11 @@
             this.ClientSize = new System.Drawing.Size(1238, 556);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnUndo);
+            this.Controls.Add(this.btnRedo);
+            this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.panel);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
@@ -318,10 +322,10 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem dToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dToolStripMenuItem1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Panel panel;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Button btnUndo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -339,6 +343,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
         private System.Drawing.Printing.PrintDocument printDocument1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnRedo;
     }
 }
